@@ -1,7 +1,6 @@
 a {
   text-decoration: none;
 }
-
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -25,10 +24,12 @@ a {
 
 .circular-btn {
   border-radius: 30px;
+  background-color: #3A64D8;
+  color: #fff;
 }
 
 .circular-btn:hover {
-  background-color: #274494;
+  background-color: #274494 !important;
 }
 
 
