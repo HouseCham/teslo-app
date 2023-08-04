@@ -36,12 +36,14 @@ const ProductPage = () => {
             </Box>
 
             {/* add to cart button */}
-            <Button color={"secondary"} className='circular-btn'>Agregar al carrito</Button>
+            <Button color={"secondary"} className='circular-btn' style={{ width: '30%' }}>Agregar al carrito</Button>
 
+            {/* chip -> inform in case of lack availability */}
             <Chip 
               label="No hay disponibles"
               color="error"
               variant='outlined'
+              style={{ width: '30%' }}
             />
 
             <Box sx={{ mt:3 }}>

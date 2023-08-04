@@ -25,6 +25,7 @@ const ProductCard: FC<Props> = ({ product }) => {
             onMouseLeave={ () => setIsHovered(false)} 
         >
             <Card>
+                {/* Prefetch = false -> in order to not generate all specific product pages */}
                 <NextLink href={"product/slug"} passHref prefetch={ false } >
                     <CardActionArea>
                         <CardMedia
