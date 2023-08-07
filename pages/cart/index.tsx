@@ -2,6 +2,7 @@ import React from 'react'
 import ShopLayout from '../../components/layouts/ShopLayout'
 import { Box, Button, Card, CardContent, Divider, Grid, Typography } from '@mui/material'
 import CartList from '../../components/cart/CartList'
+import OrderSummary from '../../components/cart/OrderSummary'
 
 const CartPage = () => {
   return (
@@ -11,7 +12,7 @@ const CartPage = () => {
         <Grid container>
             <Grid item xs={12} sm={7}>
                 {/* cart items */}
-                <CartList />
+                <CartList editable />
             </Grid>
             <Grid item xs={12} sm={5}>
                 {/* cart summary */}
@@ -21,8 +22,16 @@ const CartPage = () => {
                         <Divider sx={{ my: 1 }} />
 
                         { /* Order summary */ }
+                        <OrderSummary />
+
+                        { /* Checkout button */ }
                         <Box sx={{ mt: 3 }}>
-                            <Button color='secondary' className='circular-btn' fullWidth>Checkout</Button>
+                            <Button
+                                color='secondary'
+                                className='circular-btn'
+                                fullWidth>
+                                    Checkout
+                            </Button>
                         </Box>
                     </CardContent>
                 </Card>
